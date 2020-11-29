@@ -29,3 +29,12 @@ go build
 go install
 ```
 
+## Para adicionar um pacote externo
+```go
+go get github.com/badoux/checkmail
+```
+
+## Para remover um pacote externo
+```go
+go mod tidy
+```
