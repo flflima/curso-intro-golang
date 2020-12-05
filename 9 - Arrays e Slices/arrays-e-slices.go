@@ -31,4 +31,29 @@ func main() {
 
 	slice2 := array2[1:3]
 	fmt.Println(slice2)
+
+
+	// Arrays Internos
+	fmt.Println("----------------")
+	slice3 := make([]float32, 10, 11) // make = aloca memoria
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
+
+	slice3 = append(slice3, 10)
+	slice3 = append(slice3, 11)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
+
+
+	slice4 := make([]float32, 5)
+	fmt.Println(slice4)
+
+	slice4 = append(slice4, 10)
+
+	fmt.Println(len(slice4))
+	fmt.Println(cap(slice4))
+
+
 }
